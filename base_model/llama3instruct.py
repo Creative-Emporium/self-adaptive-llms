@@ -3,9 +3,9 @@ import os
 from .base import BaseModel
 
 
-class Llama3Instruct8B(BaseModel):
+class Llama3Instruct1B(BaseModel):
     def __init__(self):
-        self.model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+        self.model_id = "meta-llama/Llama-3.2-1B-Instruct"
         self.dec_param_file_n = "llama3_decomposed_params.pt"
 
     def get_model_id(self):
