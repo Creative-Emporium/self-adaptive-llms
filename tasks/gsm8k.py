@@ -15,7 +15,7 @@ class Gsm8kTask(Task):
         self,
     ):
         self.model_to_template = {
-            "meta-llama/Meta-Llama-3-8B-Instruct": (
+            "meta-llama/Llama-3.2-1B-Instruct": (
                 "{% set loop_messages = messages %}"
                 "{% for message in loop_messages %}"
                 "{% set content = '<|start_header_id|>' + message['role'] + '<|end_header_id|>"
